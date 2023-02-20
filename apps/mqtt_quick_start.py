@@ -12,9 +12,9 @@ logging.basicConfig(format=__log_format)
 
 lk = linkkit.LinkKit(
     host_name="cn-shanghai",
-    product_key="i6faEbhfFSd",
-    device_name="LightSwich",
-    device_secret="389181dc1c412d8db43797a89523f714")
+    product_key="i6faViFVrIm",
+    device_name="lightTest",
+    device_secret="a4ae5c850b4c9c6d2333739dc2baa606")
 # lk.config_mqtt(endpoint="iot-cn-6ja******.mqtt.iothub.aliyuncs.com")
 
 lk.enable_logger(logging.DEBUG)
