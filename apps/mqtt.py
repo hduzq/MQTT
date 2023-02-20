@@ -36,7 +36,7 @@ def on_subscribe():
 def main():
     on_mqtt_connect()
     # 自定义Topic消息上行
-    on_publish("/i6faViFVrIm/lightTest/user/test1", "Hello Python!", 1)
+    on_publish("/i6faViFVrIm/lightTest/user/test1", "Hello Aliyun! This is MQTT client ", 1)
     on_subscribe()
     while True:
         pass
