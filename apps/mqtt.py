@@ -5,9 +5,9 @@ import paho.mqtt.client as mqtt
 
 MQTTHOST = "iot-06z009y9rnab11u.mqtt.iothub.aliyuncs.com"
 MQTTPORT = 1883
-mqttClient = mqtt.Client(client_id="i6faViFVrIm.light1|securemode=2,signmethod=hmacsha256,timestamp=1676383979937|")
-mqttClient.username_pw_set(username="light1&i6faViFVrIm",
-                           password="f0d428467f9fb06467c52f24d11a50491f81c8b4f51684a92682d821ddde29c9")
+mqttClient = mqtt.Client(client_id="i6faViFVrIm.lightTest|securemode=2,signmethod=hmacsha256,timestamp=1676854208595|")
+mqttClient.username_pw_set(username="lightTest&i6faViFVrIm",
+                           password="565b911af3521ac24715872677e594832cd6845d7ab8d1acbba54cef480d87e9")
 
 
 # 连接MQTT服务器
@@ -29,18 +29,14 @@ def on_message_come(lient, userdata, msg):
 # subscribe 消息
 def on_subscribe():
     # 订阅监听自定义Topic
-    mqttClient.subscribe("light1/user/update1", 1)
+    mqttClient.subscribe("/i6faViFVrIm/lightTest/user/test1", 1)
     mqttClient.on_message = on_message_come  # 消息到来处理函数
 
 
 def main():
     on_mqtt_connect()
     # 自定义Topic消息上行
-    on_publish("light1/user/test2", "Hello Python!", 1)
-    # 系统属性Topic消息上行
-    on_publish("/sys/light1/thing/event/property/post",
-               "{\"method\":\"thing.service.property.set\",\"id\":\"i6faViFVrIm.light1|securemode=2,signmethod=hmacsha256,timestamp=1676381859164|\",\"params\":{\"Status\":1},\"version\":\"1.0.0\"}",
-               1)
+    on_publish("/i6faViFVrIm/lightTest/user/test1", "Hello Python!", 1)
     on_subscribe()
     while True:
         pass

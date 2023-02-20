@@ -16,7 +16,7 @@ $tree -L 1
 └── cloud-api-demo       # 云平台的Notebook文档和代码段
 ```
 
-2. Python版本3.9 or 3.10  
+2. Python版本3.9 or 3.10  <font color=red>如果使用linkkit需要使用Python3.8</font>
 建议用PyCharm开发，notebook可在浏览器中开发，这里我们使用的jupter lab，为了兼容notebook所以indent都用space(4)。  
 在notebook上开发各平台的API demo，好处是能添加注释以及在文档中保留代码运行结果。  
 ```
