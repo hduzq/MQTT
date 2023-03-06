@@ -5,9 +5,9 @@ import paho.mqtt.client as mqtt
 
 MQTTHOST = "iot-06z009y9rnab11u.mqtt.iothub.aliyuncs.com"
 MQTTPORT = 1883
-mqttClient = mqtt.Client(client_id="i6faWL8wiwH.yixingyimi1|securemode=2,signmethod=hmacsha256,timestamp=1677598944404|")
+mqttClient = mqtt.Client(client_id="9g55WSBuOZMNtMCJtktx000100|authType=connwl,securemode=-2,_ss=1,ext=3,lan=Python,_v=1.2.5|")
 mqttClient.username_pw_set(username="yixingyimi1&i6faWL8wiwH",
-                           password="9203b128482f2c2f0e2de0dadbfb0e12bc6bbc61915528ca665339937ca5a8bf")
+                           password="^1^1677597746541^9ffd7c5bcf0c87f")
 
 
 # 连接MQTT服务器
