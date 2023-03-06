@@ -11,9 +11,12 @@
 ```
 $tree -L 1
 .
-├── README.md            
+├── README.md
 ├── apps                 # 各个云平台的基本功能的完整Demo
-└── cloud-api-demo       # 云平台的Notebook文档和代码段
+├── cloud-api-demo       # 云平台的Notebook文档和代码段
+├── python-linkkit-examples     #Aliyun Python预注册和免注册代码
+└── requirements.txt
+
 ```
 
 2. Python版本3.9 or 3.10  <font color=red>如果使用linkkit需要使用Python3.8</font>
