@@ -41,16 +41,16 @@ g_got_result = 0
 
 lk = linkkit.LinkKit(
     host_name="cn-shanghai",
-    product_key="${YourProductKey}",
-    device_name="${YourDeviceName}",
+    product_key="i6faWL8wiwH",
+    device_name="yixingyimi11",
     device_secret="",
     auth_type="regnwl",
-    instance_id="${YourInstanceId}",
-    product_secret="${YourProductSecret}")
+    instance_id="iot-06z009y9rnab11u",
+    product_secret="Yr0iF3HIgNkwiaPj")#Yr0iF3HIgNkwiaPj
 
 lk.enable_logger(logging.DEBUG)
 
-
+#免预注册方式得到的回复
 def on_device_dynamic_register_nwl_reply(code, client_id, user_name, password):
     print("code:", code)
     if 0 == code:

@@ -10,7 +10,7 @@ lk = linkkit.LinkKit(
     host_name="cn-shanghai",
     product_key="i6faWL8wiwH",
     device_name="yixingyimi4",
-    device_secret="13273186ac594aeb9f53b3976611f6e3",
+    device_secret="",#13273186ac594aeb9f53b3976611f6e3
     product_secret="Yr0iF3HIgNkwiaPj")
 
 lk.enable_logger(logging.DEBUG)
